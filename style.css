@@ -1,0 +1,85 @@
+* {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+nav.menu-lateral {
+    width: 80px;
+    height: 100%;
+    background-color: rgb(10, 10, 10);
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #FF0077;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+nav.menu-lateral.expandir {
+    width: 300px;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: 0.3s;
+}
+
+ul li.ativo {
+    background-color: #bb236a;
+}
+
+ul li.item-menu:hover {
+    background-color: #FF0077;
+}
+
+ul li.item-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 20px 4%;
+    align-items: center;
+}
+
+ul li.item-menu a .text-link {
+    margin-left: 60px;
+    transition: 1s;
+}
+
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icon > i {
+    font-size: 30px
+}
